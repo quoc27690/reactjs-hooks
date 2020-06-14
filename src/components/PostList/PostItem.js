@@ -4,7 +4,7 @@ export default function PostItem(props) {
   const { post } = props;
   return (
     <div>
-      <li class="list-group-item">{post.title}</li>
+      <li className="list-group-item">{post.title}</li>
     </div>
   );
 }

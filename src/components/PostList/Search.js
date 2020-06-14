@@ -14,16 +14,16 @@ export default function Search(props) {
   };
 
   return (
-    <div class="input-group mb-3">
+    <div className="input-group mb-3">
       <input
         type="text"
-        class="form-control"
+        className="form-control"
         value={searchTerm}
         onChange={(e) => onChange(e.target.value)}
       />
-      <div class="input-group-append">
+      <div className="input-group-append">
         <button
-          class="btn btn-outline-secondary"
+          className="btn btn-outline-secondary"
           type="button"
           onClick={() => onClick(searchTerm)}
         >

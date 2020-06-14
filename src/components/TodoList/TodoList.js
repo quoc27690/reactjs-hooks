@@ -26,15 +26,7 @@ export default function TodoList() {
   return (
     <div>
       <TodoForm onSubmit={onSubmit} />
-      <ul className="todo-list">
-        {todoList.map((todoItem) => (
-          <TodoItem
-            key={todoItem.id}
-            todoItem={todoItem}
-            onTodoClick={onTodoClick}
-          />
-        ))}
-      </ul>
+      <TodoItem todoList={todoList} onTodoClick={onTodoClick} />
     </div>
   );
 }

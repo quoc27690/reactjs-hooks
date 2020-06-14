@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import "./ColorBox.scss";
 
 function getRamdomColor() {
-  const COLOR_LIST = ["deeppink", "green", "yellow"];
-  const randomIndex = Math.trunc(Math.random() * 3);
+  const COLOR_LIST = ["deeppink", "green", "yellow", "black", "blue"];
+  const randomIndex = Math.trunc(Math.random() * 5);
   return COLOR_LIST[randomIndex];
 }
 

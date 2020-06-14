@@ -4,28 +4,28 @@ export default function TodoForm(props) {
   const { onSubmit } = props;
   const [value, setValue] = useState("");
 
-  const onChange = (value) => {
-    setValue(value);
+  const onChange = (e) => {
+    setValue(e.target.value);
   };
 
-  const onClick = (value) => {
+  const onClick = () => {
     onSubmit(value);
     setValue("");
   };
 
   return (
-    <div class="input-group mb-3">
+    <div className="input-group mb-3">
       <input
         type="text"
-        class="form-control"
+        className="form-control"
         value={value}
-        onChange={(e) => onChange(e.target.value)}
+        onChange={onChange}
       />
-      <div class="input-group-append">
+      <div className="input-group-append">
         <button
-          class="btn btn-outline-secondary"
+          className="btn btn-outline-secondary"
           type="button"
-          onClick={() => onClick(value)}
+          onClick={onClick}
         >
           Add
         </button>

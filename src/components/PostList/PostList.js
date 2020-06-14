@@ -50,7 +50,7 @@ export default function PostList() {
   return (
     <div className="container">
       <Search onSubmit={onSubmit} />
-      <ul class="list-group">
+      <ul className="list-group">
         {posts.map((post) => (
           <PostItem key={post.id} post={post} />
         ))}
